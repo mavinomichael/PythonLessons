@@ -1,0 +1,32 @@
+Write a program that allows the user to manage their contacts. The program should provide the following options:
+
+Add a new contact
+View all contacts
+Search for a contact
+Delete a contact
+Use a class objects to store each contact, with the name and the contact details as attributes. The program should run until the user chooses to exit.
+
+Example output:
+Contact Management System
+
+1. Add a new contact
+2. View all contacts
+3. Search for a contact
+4. Delete a contact
+5. Exit
+
+Enter your choice: 1
+
+Enter contact name: John
+Enter contact phone number: 1234567890
+
+Contact added successfully!
+
+Enter your choice: 2
+
+Contact List:
+Name: John  Phone: 1234567890
+
+Enter your choice: 5
+
+Goodbye!

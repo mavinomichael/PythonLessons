@@ -1,0 +1,7 @@
+Write a program that generates the Fibonacci series up to a specified number of terms. The Fibonacci series is a sequence of numbers where each number is the sum of the two preceding ones. The program should ask the user to enter the number of terms to generate and then display the series.
+
+Example output:
+Enter the number of terms: 8
+
+Fibonacci Series:
+0 1 1 2 3 5 8 13
