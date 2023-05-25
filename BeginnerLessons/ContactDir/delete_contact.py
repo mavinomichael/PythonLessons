@@ -1,9 +1,12 @@
 import BeginnerLessons.ContactDir.contact_manager as manager
 import BeginnerLessons.ContactDir.impl as impl
+from BeginnerLessons.ContactDir.contact import Contact
 
 
 def delete_contact(contact):
     manager.delete(contact)
+    print('contact deleted successfully')
+    impl.init()
 
 
 def find_contact(first_name):
@@ -15,13 +18,12 @@ def find_contact(first_name):
             return None
 
 
-def check(contact):
-    response = input(f"Are you sure you want to delete {contact}? YES/NO")
+def check(contact: Contact):
+    response = input(f"Are you sure you want to delete \n"
+                     f"{contact.first_name, contact.last_name, contact.phone}? YES/NO")
     match response:
         case 'YES':
             delete_contact(contact)
-            print('contact deleted successfully')
-            impl.init()
         case 'NO':
             print('operation cancelled')
             impl.init()
@@ -36,3 +38,4 @@ def start():
         check(contact)
     else:
         print(f'No contact matching {first_name} was found')
+        impl.init()

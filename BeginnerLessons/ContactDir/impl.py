@@ -1,6 +1,7 @@
 import BeginnerLessons.ContactDir.add_contact as add_manager
 import BeginnerLessons.ContactDir.delete_contact as delete_manager
 import BeginnerLessons.ContactDir.view_contacts as view_manager
+import BeginnerLessons.ContactDir.search_contact as search_manager
 
 
 def init():
@@ -16,7 +17,7 @@ def init():
         case 2:
             view_manager.view_all_contacts()
         case 3:
-            add_manager.start()
+            search_manager.start()
         case 4:
             delete_manager.start()
         case 5:

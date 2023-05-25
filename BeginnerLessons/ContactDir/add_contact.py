@@ -6,6 +6,7 @@ import BeginnerLessons.ContactDir.impl as impl
 def add_contact(first_name, last_name, phone):
     contact = Contact(first_name, last_name, phone)
     manager.add(contact)
+    print('contact saved successfully')
 
 
 def start():
